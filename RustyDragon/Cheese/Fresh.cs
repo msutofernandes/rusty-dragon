@@ -10,14 +10,6 @@ namespace RustyDragon
         {
         }
 
-        public override void SetPrice(Cheese cheese, DateTime currentDate)
-        {
-            if (!IsExpired(currentDate))
-            {
-                cheese.Price = PriceCalculator.ApplyDiscount(cheese, currentDate);
-            }
-        }
-
         public override int PercentageDiscount(Cheese cheese, DateTime currentDate)
         {
             if (Utils.PastBeforeDate(cheese, currentDate))
