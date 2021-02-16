@@ -13,11 +13,6 @@ namespace RustyDragon
         public override void SetPrice(Cheese cheese, DateTime currentDate)
         {
             cheese.Price = PriceCalculator.ApplyAddition(cheese, currentDate);
-
-            if (cheese.Price > 20)
-            {
-                cheese.Price = 20;
-            }
         }
     }
 }

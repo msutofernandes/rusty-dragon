@@ -15,11 +15,6 @@ namespace RustyDragon
             if (!IsExpired(currentDate))
             {
                 cheese.Price = PriceCalculator.ApplyDiscount(cheese, currentDate);
-
-                if (cheese.Price < 0)
-                {
-                    cheese.Price = 0;
-                }
             }
         }
 

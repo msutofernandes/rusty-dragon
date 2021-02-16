@@ -83,5 +83,25 @@ namespace RustyDragon
 
             return 5;
         }
+
+        public bool ReachMin()
+        {
+            if (Price < 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool ReachMax()
+        {
+            if (Price > 20)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }
